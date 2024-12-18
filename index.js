@@ -61,7 +61,15 @@ document.addEventListener('DOMContentLoaded', () => {
   }
 
   function displayResults() {
-    const correctCount = userAnswers.filter((answer, index) => answer === correctAnswers[index]).length;
+    
+    let correctCount = 0
+    
+    userAnswers.forEach((answer, index) => {
+      if (answer === correctAnswers[index]) {
+      correctCount++
+      }
+    })
+  
     const incorrectCount = totalQuestions - correctCount
 
     const ctx = document.querySelector('#my-chart').getContext('2d')
