@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Questionnaire culture G</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+</head>
+
+<body>
+    <div class="container">
+        <div class="row mt-2">
+            <div class="col">
+                <div id="progress" class="progress" role="progressbar" aria-label="Example with label" aria-valuenow="0"
+                    aria-valuemin="0" aria-valuemax="100">
+                    <div class="progress-bar" style="width: 0%">0%</div>
+                </div>
+            </div>
+        </div>
+        <div class="row mt-4">
+            <ul class="nav nav-tabs" id="myTab" role="tablist">
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link active" id="question-1-tab" data-bs-toggle="tab"
+                        data-bs-target="#question-1-content" type="button" role="tab" aria-controls="question-1-content"
+                        aria-selected="true" disabled>Question 1</button>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link" id="question-2-tab" data-bs-toggle="tab"
+                        data-bs-target="#question-2-content" type="button" role="tab" aria-controls="question-2-content"
+                        aria-selected="false" disabled>Question 2</button>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link active" id="question-3-tab" data-bs-toggle="tab"
+                        data-bs-target="#question-3-content" type="button" role="tab" aria-controls="question-1-content"
+                        aria-selected="true" disabled>Question 3</button>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link" id="question-4-tab" data-bs-toggle="tab"
+                        data-bs-target="#question-4-content" type="button" role="tab" aria-controls="question-2-content"
+                        aria-selected="false" disabled>Question 4</button>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link active" id="question-5-tab" data-bs-toggle="tab"
+                        data-bs-target="#question-5-content" type="button" role="tab" aria-controls="question-1-content"
+                        aria-selected="true" disabled>Question 5</button>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link" id="question-6-tab" data-bs-toggle="tab"
+                        data-bs-target="#question-6-content" type="button" role="tab" aria-controls="question-2-content"
+                        aria-selected="false" disabled>Question 6</button>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link active" id="question-7-tab" data-bs-toggle="tab"
+                        data-bs-target="#question-7-content" type="button" role="tab" aria-controls="question-1-content"
+                        aria-selected="true" disabled>Question 7</button>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link" id="question-8-tab" data-bs-toggle="tab"
+                        data-bs-target="#question-8-content" type="button" role="tab" aria-controls="question-2-content"
+                        aria-selected="false" disabled>Question 8</button>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link active" id="question-9-tab" data-bs-toggle="tab"
+                        data-bs-target="#question-9-content" type="button" role="tab" aria-controls="question-1-content"
+                        aria-selected="true" disabled>Question 9</button>
+                </li>
+
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link" id="question-10-tab" data-bs-toggle="tab"
+                        data-bs-target="#question-10-content" type="button" role="tab"
+                        aria-controls="question-2-content" aria-selected="false" disabled>Question 10</button>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link" id="results-tab" data-bs-toggle="tab" data-bs-target="#results-content"
+                        type="button" role="tab" aria-controls="results-content" aria-selected="false"
+                        disabled>Résultats</button>
+                </li>
+            </ul>
+            <div class="tab-content" id="myTabContent">
+                <div class="tab-pane fade show active" id="question-1-content" role="tabpanel"
+                    aria-labelledby="question-1-tab" tabindex="0">
+                    <form id="form-question-1">
+                        <div class="mb-3">
+                            <label>Quel est le plus grand océan du monde?</label>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="question-1" id="question-1-Pacifique"
+                                    value="Pacifique">
+                                <label class="form-check-label" for="question-1-Pacifique">L'océan Pacifique</label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="question-1" id="question-1-Atlantique"
+                                    value="Atlantique">
+                                <label class="form-check-label" for="question-1-Atlantique">L'océan Atlantique</label>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+                <div class="tab-pane fade" id="question-2-content" role="tabpanel" aria-labelledby="question-2-tab"
+                    tabindex="0">
+                    <form id="form-question-2">
+                        <div class="mb-3">
+                            <label>Combien y'a t'il de seconde dans une journée?</label>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="question-2" id="question-2-Heure"
+                                    value="Heure">
+                                <label class="form-check-label" for="question-2-Heure">3600</label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="question-2" id="question-2-seconde"
+                                    value="Seconde">
+                                <label class="form-check-label" for="question-2-seconde">86400</label>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+                <div class="tab-pane fade" id="question-3-content" role="tabpanel" aria-labelledby="question-3-tab"
+                    tabindex="0">
+                    <form id="form-question-3">
+                        <div class="mb-3">
+                            <label>Qui a peint la Joconde?</label>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="question-3" id="question-3-Musk"
+                                    value="Musk">
+                                <label class="form-check-label" for="question-3-Musk">Elon Musk</label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="question-3" id="question-3-Vinci"
+                                    value="Vinci">
+                                <label class="form-check-label" for="question-3-Vinci">Léonard de Vinci</label>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+                <div class="tab-pane fade" id="question-4-content" role="tabpanel" aria-labelledby="question-4-tab"
+                    tabindex="0">
+                    <form id="form-question-4">
+                        <div class="mb-3">
+                            <label>Quel est le plus long fleuve du monde</label>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="question-4" id="question-4-Nil"
+                                    value="Nil">
+                                <label class="form-check-label" for="question-4-Nil">Le Nil</label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="question-4" id="question-4-Amazone"
+                                    value="Amazone">
+                                <label class="form-check-label" for="question-4-Amazone">L'Amazone</label>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+                <div class="tab-pane fade" id="question-5-content" role="tabpanel" aria-labelledby="question-5-tab"
+                    tabindex="0">
+                    <form id="form-question-5">
+                        <div class="mb-3">
+                            <label>Quelle est la monnaie utilisée au Royaume-Uni?</label>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="question-5" id="question-5-sterling"
+                                    value="Sterling">
+                                <label class="form-check-label" for="question-5-Sterling">La livre Sterling</label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="question-5" id="question-5-Euro"
+                                    value="Euro">
+                                <label class="form-check-label" for="question-5-Euro">L'Euro</label>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+                <div class="tab-pane fade" id="question-6-content" role="tabpanel" aria-labelledby="question-6-tab"
+                    tabindex="0">
+                    <form id="form-question-6">
+                        <div class="mb-3">
+                            <label>Quelle est la planète la plus proche du soleil?</label>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="question-6" id="question-6-Mars"
+                                    value="Mars">
+                                <label class="form-check-label" for="question-6-Mars">Mars</label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="question-6" id="question-6-Mercure"
+                                    value="Mercure">
+                                <label class="form-check-label" for="question-6-Mercure">Mercure</label>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+                <div class="tab-pane fade" id="question-7-content" role="tabpanel" aria-labelledby="question-7-tab"
+                    tabindex="0">
+                    <form id="form-question-7">
+                        <div class="mb-3">
+                            <label>Qui a découvert la pénicilline?</label>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="question-7" id="question-7-Fleming"
+                                    value="Fleming">
+                                <label class="form-check-label" for="question-7-Fleming">Alexander Fleming</label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="question-7" id="question-7-Pasteur"
+                                    value="Pasteur">
+                                <label class="form-check-label" for="question-7-Pasteur">Louis Pasteur</label>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+                <div class="tab-pane fade" id="question-8-content" role="tabpanel" aria-labelledby="question-8-tab"
+                    tabindex="0">
+                    <form id="form-question-8">
+                        <div class="mb-3">
+                            <label>Quelle est la langue la plus parlée dans le monde?</label>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="question-8" id="question-8-Anglais"
+                                    value="Anglais">
+                                <label class="form-check-label" for="question-8-Anglais">L'Anglais</label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="question-8" id="question-8-Mandarin"
+                                    value="Mandarin">
+                                <label class="form-check-label" for="question-8-Mandarin">Le Mandarin</label>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+                <div class="tab-pane fade" id="question-9-content" role="tabpanel" aria-labelledby="question-9-tab"
+                    tabindex="0">
+                    <form id="form-question-9">
+                        <div class="mb-3">
+                            <label>Quel est le principal composant de l'air?</label>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="question-9" id="question-9-Hydrogene"
+                                    value="Hydrogene">
+                                <label class="form-check-label" for="question-9-Hydrogene">L'Hydrogene</label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="question-9" id="question-9-Azote"
+                                    value="Azote">
+                                <label class="form-check-label" for="question-9-Azote">L'azote</label>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+                <div class="tab-pane fade" id="question-10-content" role="tabpanel" aria-labelledby="question-10-tab"
+                    tabindex="0">
+                    <form id="form-question-10">
+                        <div class="mb-3">
+                            <label>Quel est le nom du satellite naturel de la Terre?</label>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="question-10" id="question-10-Apollo"
+                                    value="Apollo">
+                                <label class="form-check-label" for="question-10-oslo">Apollo-11</label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="question-10"
+                                    id="question-10-Lune" value="Lune">
+                                <label class="form-check-label" for="question-10-stockholm">La lune</label>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+                <div class="tab-pane fade" id="results-content" role="tabpanel" aria-labelledby="results-tab"
+                    tabindex="0">
+                    <div style="width: 50%; margin: auto; text-align: center;">
+                        <canvas id="my-chart" width="400" height="400"></canvas>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="mt-2 d-flex justify-content-between">
+            <div>
+                <button class="btn btn-primary" type="button" id="previous-btn">Précédent</button>
+            </div>
+            <div>
+                <button class="btn btn-primary" type="button" id="next-btn">Suivant</button>
+            </div>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossOrigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="index.js"></script>
+</body>
+
+</html>
